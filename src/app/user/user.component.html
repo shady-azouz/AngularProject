@@ -1,0 +1,8 @@
+<input 
+    type="text"
+    class="form-control"
+    (input)="onUpdateUserName($event)" #name>
+<button class="btn btn-primary"
+[disabled]="inputEmpty"
+(click)="onCreateUser()">Add User</button>
+<p>{{ userName }}</p>
